@@ -1,4 +1,4 @@
-# bluesky-skeet
+# ALFHOG
 
 Post links to Bluesky from your browser. Supports Safari, Chrome and Firefox.
 
@@ -6,7 +6,7 @@ This extension will not track you: No analytics, no data collection. It just ope
 
 The icon will appear greyed out until permissions are granted.
 
-![Post to Bluesky icon](bsky.png)
+![ALFHOG icon](bsky.png)
 
 A `Share to Bluesky` menu item is also available from the right-click menu.
 
@@ -25,13 +25,17 @@ The Safari extension requires an Xcode project wrapper. To generate it from the 
 xcrun safari-web-extension-converter extension/ \
   --bundle-identifier page.harrison.bluesky-skeet \
   --project-location safari \
-  --app-name "Post to Bluesky" \
+  --app-name "ALFHOG" \
   --swift --macos-only --copy-resources
 ```
 
 To enable in Safari: Open the generated Xcode project, build and run. In Safari, go to Settings > Developer > "Allow unsigned extensions", then enable the extension in Settings > Extensions.
 
-Consider the `safari` folder to be read-only and make changes in the `extensions` folder.
+Consider the `safari` folder to be read-only and make changes in the `extension` folder.
+
+## Name
+
+The app was previously called "Post to Bluesky". Apple rejected that name and the butterfly icon as trademark issues, so it is now ALFHOG. Bluesky is only referenced descriptively (menu items, store description). The bundle identifier keeps the old `page.harrison.Bluesky-Skeet` value because it cannot change once a build has been uploaded to App Store Connect.
 
 ## Assets
 
